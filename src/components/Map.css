@@ -1,0 +1,41 @@
+.phone-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  padding: 32px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.phone-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.phone-card:hover {
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow);
+  transform: translateY(-4px);
+}
+
+.phone-card img {
+  width: 100%;
+  max-width: 200px;
+  height: 220px;
+  object-fit: contain;
+}
+
+.phone-card h1 {
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: normal;
+  margin: 0;
+}
