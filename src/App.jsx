@@ -7,12 +7,14 @@ import Contact from './Pages/contact'
 import Navbar from './Components/Navbar'
 import User from './Pages/User'
 import Dynamic_User from './Pages/Dynamic_User'
+import Nav from './Components/Nav'
 
 const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
+        <Nav/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
