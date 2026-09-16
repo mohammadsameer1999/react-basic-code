@@ -5,20 +5,40 @@ const Navbar = () => {
     return (
 
         <>
-            <div  style={{backgroundColor: 'pink', padding : '10px'}}>
-                <NavLink  style={ ({isActive}) => ({
+            <div style={{ backgroundColor: 'pink', padding: '10px', marginBottom : '10px' }}>
+                <NavLink style={({ isActive }) => ({
                     color: isActive ? "white" : "blue",
-                    backgroundColor: isActive ? "greeen" : "transparent",
-                    padding : "5px 10px",
-                    borderRadius : "5px",
-                    textDecoration : "none"
+                    backgroundColor: isActive ? "green" : "transparent",
+                    padding: "5px 10px",
+                    borderRadius: "5px",
+                    textDecoration: "none"
 
 
-               } )}  to={'/'}>Home</NavLink>
+                })} to={'/'}>Home</NavLink>
 
-            <Link style={{margin:'10px'}}  to={'/about'}>About</Link>
+                <NavLink style={({ isActive }) => ({
+                    color: isActive ? "white" : "blue",
+                    backgroundColor: isActive ? "green" : "transparent",
+                    padding: "5px 10px",
+                    borderRadius: "5px",
+                    textDecoration: "none"
+                })} to={'/about'}>About</NavLink>
 
-            <Link style={{margin:'10px'}}  to={'/contact'}>Contact Us</Link>
+                <NavLink style={({ isActive }) => ({
+                    color: isActive ? "white" : "blue",
+                    backgroundColor: isActive ? "green" : "transparent",
+                    padding: "5px 10px",
+                    borderRadius: "5px",
+                    textDecoration: "none"
+                })} to={'/contact'}>Contact Us</NavLink>
+
+                <NavLink style={({ isActive }) => ({
+                    color: isActive ? "white" : "blue",
+                    backgroundColor: isActive ? "green" : "transparent",
+                    padding: "5px 10px",
+                    borderRadius: "5px",
+                    textDecoration: "none"
+                })} to={'/user'}>User</NavLink>
 
             </div>
 
