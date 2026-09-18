@@ -1,75 +1,75 @@
-import React, { useState } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+// import React, { useState } from 'react'
+// import { Link, useLocation, useNavigate } from 'react-router-dom';
 
-const Nav = () => {
+// const Nav = () => {
 
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+//     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-    const location = useLocation();
+//     const location = useLocation();
 
-    const navigate = useNavigate();
+//     const navigate = useNavigate();
 
-    const handleLoggedIn = () => {
+//     const handleLoggedIn = () => {
 
-        setIsLoggedIn(true);
+//         setIsLoggedIn(true);
 
-        navigate("/user")
-    }
+//         navigate("/user")
+//     }
 
-    const handleLoggedOut = () => {
+//     const handleLoggedOut = () => {
 
-        setIsLoggedIn(false);
+//         setIsLoggedIn(false);
 
-        navigate("/home")
-    }
+//         navigate("/home")
+//     }
 
-    return (
-        <div>
+//     return (
+//         <div>
 
-            <ul>
+//             <ul>
 
-                <li>
+//                 <li>
 
-                    <Link to="/">Home</Link>
-                </li>
-                {isLoggedIn && (
-                    <>
-                        <li>
+//                     <Link to="/">Home</Link>
+//                 </li>
+//                 {isLoggedIn && (
+//                     <>
+//                         <li>
 
-                            <Link to="/user">User</Link>
-                        </li>
+//                             <Link to="/user">User</Link>
+//                         </li>
 
-                         <li>
-                            <button onClick={handleLoggedOut}> Logout</button>
-                        </li>
+//                          <li>
+//                             <button onClick={handleLoggedOut}> Logout</button>
+//                         </li>
 
                         
 
-                    </>
-                )}
+//                     </>
+//                 )}
 
-                {!isLoggedIn && (
-                    <>
-                        <li>
+//                 {!isLoggedIn && (
+//                     <>
+//                         <li>
 
-                            <Link to="/about">About</Link>
-                        </li>
+//                             <Link to="/about">About</Link>
+//                         </li>
 
-                        <li>
+//                         <li>
 
-                            <Link to="/contact">Contact Us</Link>
-                        </li>
+//                             <Link to="/contact">Contact Us</Link>
+//                         </li>
 
-                        <li>
-                            <button onClick={handleLoggedIn}> Login</button>
-                        </li>
+//                         <li>
+//                             <button onClick={handleLoggedIn}> Login</button>
+//                         </li>
 
-                    </>
-                )}
+//                     </>
+//                 )}
 
-            </ul>
-        </div>
-    )
-}
+//             </ul>
+//         </div>
+//     )
+// }
 
-export default Nav
+// export default Nav

@@ -7,19 +7,23 @@ import Contact from './Pages/contact'
 import Navbar from './Components/Navbar'
 import User from './Pages/User'
 import Dynamic_User from './Pages/Dynamic_User'
-import Nav from './Components/Nav'
+// import Nav from './Components/Nav'
 
 const App = () => {
   return (
     <>
       <Router>
         {/* <Navbar /> */}
-        <Nav/>
+        {/* <Nav/> */}
         <Routes>
           <Route path='/' element={<Home />} />
+
           <Route path='/about' element={<About />} />
+
           <Route path='/contact' element={<Contact />} />
+
           <Route path='/user' element={<User />} />
+          
                     <Route path='/user/:slug' element={<Dynamic_User />} />
 
 
