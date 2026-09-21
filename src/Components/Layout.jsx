@@ -11,21 +11,24 @@ const Layout = () => {
 
                     <h1>My Shop</h1>
 
-                    {/* <Nav> */}
+                    <nav>
 
-                        <Link to='/'>Home</Link>
+                    <Link to='/'>Home</Link>
 
-                        <Link to='/product'>Product</Link>
+                    <Link to='/product'>Product</Link>
 
-                        <Link to='/about'>About</Link>
+                    <Link to='/about'>About</Link>
 
-                    {/* </Nav> */}
+
+                    <Link to='/profile'>Profile</Link>
+
+                    </nav>
 
                 </header>
-                
+
                 <main>
 
-        <Outlet />
+                    <Outlet />
 
                 </main>
 
